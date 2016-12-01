@@ -26,7 +26,7 @@ RUN git clone https://github.com/darcymason/pydicom.git && \
     cd .. && \
     rm -rf pydicom
 
-ENV TENSORFLOW_VERSION 0.11.0
+ENV TENSORFLOW_VERSION 0.12.0rc0
 ENV KERAS_VERSION 1.1.2
 RUN pip --no-cache-dir install \
     https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-${TENSORFLOW_VERSION}-cp35-cp35m-linux_x86_64.whl
